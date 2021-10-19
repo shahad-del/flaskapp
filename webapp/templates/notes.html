@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Contents</h1>
+<ol>
+    {% for (l,u) in toc %}
+    <li><a href="/{{l}}"> {{u}}</a></li>
+    {% endfor %}
+</ol>
+
+{% endblock %}

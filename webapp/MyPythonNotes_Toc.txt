@@ -1,0 +1,5 @@
+pythonSyntax|Basic Syntax
+pythonDictionaries|Dictionaries
+pythonLists|Lists
+pythonFiles|Files
+NewPage|Page

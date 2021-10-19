@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
 body {
-    font-family:      Verdana, Geneva, Arial, sans-serif;
+    font-family:      'Open Sans',Verdana, Geneva, Arial, sans-serif;
     font-size:        medium;
-    background-color: tan;
+    background-color: rgb(240, 224, 204);
+    line-height:      1.75em;
     margin-top:       5%;
     margin-bottom:    5%;
     margin-left:      10%;
@@ -70,3 +75,20 @@ body {
   select {
     font-size:        125%;
   }
+
+.note-title{
+  font-weight: bold;
+  font-size: 18px;
+  line-height:1.75em;
+  text-align: center;
+  padding: 8px;
+}
+.note-content{
+  font-size:14px;
+}
+
+.footer{
+  background-color: rgb(41, 39, 39);
+  color: #fff;
+  text-align:center;
+}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<table>
+    <thead>
+        <tr>
+            <th>SNo</th>
+            {% for items in h %}
+            <th onmouseover="increaseSize(event)" onmouseout="decreaseSize(event)">{{items}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for line in data %}
+        <tr>
+            <td>{{(loop.index0  + 1)}}</td>
+            {% for item in line %}
+            {% if loop.index0 == 0 %}
+            <td><pre><code class="language-python">{{item}}</code></pre></td>
+            {% else %}
+            <td>{{item}}</td>
+            {% endif %}
+            
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

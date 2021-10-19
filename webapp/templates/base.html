@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ the_title }}</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
-    {% block body %}
-    {% endblock %}
-</body>
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/default.min.css" />
+    <script src="static/highlight.min.js"></script>
+  </head>
+  <body>
+    {% block body %} {% endblock %}
+
+
+<p class="footer">
+    {% block footer %} {% endblock %}
+</p>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>
