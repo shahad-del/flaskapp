@@ -8,4 +8,60 @@
     {% endfor %}
 </ol>
 
+<p>
+
+    mysql_secure_installation
+    $ brew services stop mysql
+$ pkill mysqld
+$ rm -rf /usr/local/var/mysql/ # NOTE: this will delete your existing database!!!
+$ brew postinstall mysql
+$ brew services restart mysql
+$ mysql -uroot
+
+
+    We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+password is vsearchpasswd and
+other one is mysqlroot
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -uroot
+
+To start mysql:
+  brew services start mysql
+Or, if you don't want/need a background service you can just run:
+  /opt/homebrew/opt/mysql/bin/mysqld_safe --datadir=/opt/homebrew/var/mysql
+</p>
+
+
+<p>
+    MySql => Db Engine 
+    Local Server => MySQL installation on own machine
+    Remote Server => (MySql installation on another machine)
+
+
+    Analogies :::
+        VSCode => MySQL Server
+        folders => Databases
+        folders -> files => Databases -> Tables
+        files -> fileName / Extension => Tables -> Columns
+        files -> text data => Tables -> Rows
+
+
+        Columns 
+            -> DataType
+            -> Constraints (Rules to ensure data follows certain conditions)
+
+        Tables
+            -> Columns/Rows
+            -> Keys (helps to identify each row uniquely)
+            -> Permissions (which user can read this table)
+
+
+
+</p>
+<h1>Apple_Mango1!</h1>
 {% endblock %}
