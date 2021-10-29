@@ -69,7 +69,9 @@ def notes_page() -> "html":
     # toc = [('pythonSyntax','Python Syntax'), ('pythonDictionaries','Dictionaries')]
     return render_template('notes.html', toc=toc)
 
-
+@ app.route('/class')
+def class_page() -> "html":
+    return render_template('class.html')
 @app.route('/pythonSyntax')
 def python_syntax() -> "html":
     return render_template('python_syntax.html')

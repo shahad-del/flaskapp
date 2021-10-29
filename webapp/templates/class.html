@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<p>Python classes let you share behavior (a.k.a. methods) and state (a.k.a. attributes).</p>
+<p> Creating a new object from a class looks very like a function call. Remember: to create an object called mycount from a class called CountFromBy, you’d use this line of code:
+    <pre><code lang="python">mycount = CountFromBy()</code></pre>Here mycount is an object  that is created from countFromBy class</p>
+<p>When an object is created from a class, the object shares the class’s code with every other object created from the class. However, each object maintains its own copy of the attributes.
+    <pre><code lang = python">mycount = CountFromBy() 
+    </code></pre>
+    <pre><code lang = "python">object2 = countFromBy()
+    </code></pre>
+</p>
+<h4>Both objects mycount and object2 shares all those methods in the class countFromBy but have their own attributes.That means:
+    <pre><code lang = "python">mycount = CountFromBy('Number')</code></pre>
+    <pre><code lang = "python">object2 = CountFromBy('nikhil')</code></pre>
+This makes both the object different.
+</h4>
+<h4>You add behaviors to a class by creating methods. A method is a function defined within a class.To add an attribute to a class create a variable.</h4>
+{% endblock %}

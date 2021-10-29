@@ -20,23 +20,23 @@
 
 === this line displays what randint does in random module.
     
-    The remove method is great for when you know the value of the object you
+    <p>The remove method is great for when you know the value of the object you
     want to remove. But often it is the case that you want to remove an object
     from a specific index slot. Python provides the pop method.If you invoke pop without specifying an index value, the last object in the list is removed and returned. 
     
     
     append can be used to add a single object to an existing list. Extend takes a list of objects as its sole argument.The extend method takes a second list and adds each of its objects to an existing list. This method is very useful for combining two lists into one.The insert method inserts an object into an existing list before a specified index value. 
+    <pre><code class="language-python">
     nums=[2,3,4]
     nums.insert(0, 1)
     nums
     [1, 2, 3, 4]
     0 is the The index of the object
     to insert *before*
-    1 is the value (aka “object”) to insert
+    1 is the value (aka “object”) to insert</code></pre></p>     
     
-    
-    
-    Sets like dictionaries are unordered but sets doesn’t allow duplicates.just like set in math,this sets too allow methods like union, intersection and difference. Union combines two sets throwing out the common one whereas difference brings the uncommon one from first set n finally intersection   brings the common between the two.
+    <p>Sets like dictionaries are unordered but sets doesn’t allow duplicates.just like set in math,this sets too allow methods like union, intersection and difference. Union combines two sets throwing out the common one whereas difference brings the uncommon one from first set n finally intersection   brings the common between the two.
+    <pre><code class="language-python">
     Eg: vowels = set(‘aeiou')
      word = ‘hello'
     u = vowels.union(set(word)) 
@@ -45,46 +45,34 @@
     d = vowels.difference(set(word))
     d={'u', 'i', 'a'} 
     i = vowels.intersection(set(word)) 
-    i={'e', 'o'} 
-    The rule is that, in order for a tuple to be a tuple, every tuple needs to include at least one comma between the parentheses, even when the tuple contains a single object. This rule means that in order to assign a single object to a tuple (we’re assigning a string object in this instance), we need to include the trailing comma, like so: 
-    t2 = ('Python',) 
-    Dictionary of dictionaries- how to extract data from such
-    People ={
+    i={'e', 'o'}</code></pre> </p>
+    <p>The rule is that, in order for a tuple to be a tuple, every tuple needs to include at least one comma between the parentheses, even when the tuple contains a single object. This rule means that in order to assign a single object to a tuple (we’re assigning a string object in this instance), we need to include the trailing comma, like so:
+    <pre><code class="language-python"> t2 = ('Python',)</pre></code> </p> 
+    <p>Dictionary of dictionaries- how to extract data from such:
+    <pre><code class="language-python">people ={
     'Ford': {'Occupation': 'Researcher', 'Gender': 'Male', 'Home Planet': 'Betelgeuse Seven', 'Name': 'Ford Prefect’},
     'Arthur': {'Gender': 'Male','Home Planet': 'Earth', 
     'Name': 'Arthur Dent', 
     'Occupation': 'Sandwich-Maker' }
      }
     people['Arthur']['Occupation'] 
-    'Sandwich-Maker' 
+    'Sandwich-Maker' </code></pre>
     
-    Using square brackets with dictionaries works the same as with lists. However, instead of accessing your data in a specified slot using an index value, with Python’s dictionary you access your data via the key associated with it
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     intead of initializing dictionary every time like {'o': 0, 'i': 0, 'a': 0, 'u': 0, 'e': 2} we can just set it to default.
-    
-     The rule is that, in order for a tuple to be a tuple, every tuple needs to include at least one comma between the parentheses, even when the tuple contains a single object. This rule means that in order to assign a single object to a tuple (we’re assigning a string object in this instance), we need to include the trailing comma, like so: t2 = ('Python',)
-    The standard library includes a module called pprint that can take any data structure and display it in a easier-to-read format. The name pprint is a shorthand for “pretty print.”
-    
-    When the interpreter encounters a return statement in your function’s suite, two things happen: the function terminates at the return statement, and any value provided to the return statement is passed back to your calling code. 
-    Our review of the four data structures confirms that the search4vowels function returns a set. But, other than calling the function and checking the return type, how can users of our function know this ahead of time? How do they know what to expect?Annotations provide details about your function, but they do not imply any other behavior (such as type checking).
+    Using square brackets with dictionaries works the same as with lists. However, instead of accessing your data in a specified slot using an index value, with Python’s dictionary you access your data via the key associated with it.
+     intead of initializing dictionary every time like {'o': 0, 'i': 0, 'a': 0, 'u': 0, 'e': 2} we can just set it to default.</p>
+    <p>
+    The standard library includes a module called pprint that can take any data structure and display it in a easier-to-read format. The name pprint is a shorthand for “pretty print.”</p>
+    <p><h4>return statement</h4>
+    When the interpreter encounters a return statement in your function’s suite, two things happen: the function terminates at the return statement, and any value provided to the return statement is passed back to your calling code. </p>
+    <p><h4>Annotations</h4>Our review of the four data structures confirms that the search4vowels function returns a set. But, other than calling the function and checking the return type, how can users of our function know this ahead of time? How do they know what to expect?Annotations provide details about your function, but they do not imply any other behavior (such as type checking).
     
     Use Annotations to Improve Your Docs
-    The goal of annotations is not to make life easier for the interpreter; it’s to make life easier for the user of your function. Annotations are a documentation standard, not a type enforcement mechanism.
+    The goal of annotations is not to make life easier for the interpreter; it’s to make life easier for the user of your function. Annotations are a documentation standard, not a type enforcement mechanism.</p>
     
-    The GET method
-    Browsers typically use this method to request a resource from the web server, and this method is by far the most used. (We say “typically” here as it is possible to—rather confusingly—use GET to send data from your browser to the server, but we’re not focusing on that option here.) All of the URLs in our webapp currently support GET, which is Flask’s default HTTP method.
-    2 The POST method
-    This method allows a web browser to send data to the server over HTTP, and is closely associated with the HTML <form> tag. You can tell your Flask webapp to accept posted data from a browser by providing an extra argument on the @app.route line.
+    <p><h4>The GET method</h4>
+    Browsers typically use this method to request a resource from the web server, and this method is by far the most used. (We say “typically” here as it is possible to—rather confusingly—use GET to send data from your browser to the server, but we’re not focusing on that option here.) All of the URLs in our webapp currently support GET, which is Flask’s default HTTP method.<br>
+    <h4>The POST method</h4>
+    This method allows a web browser to send data to the server over HTTP, and is closely associated with the HTML 'form' tag. You can tell your Flask webapp to accept posted data from a browser by providing an extra argument on the @app.route line.</p>
     
     
     
