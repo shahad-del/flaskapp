@@ -5,13 +5,13 @@
     <thead>
         <tr>
             <th>SNo</th>
-            {% for items in h %}
+            {% for items in the_row_titles %}
             <th onmouseover="increaseSize(event)" onmouseout="decreaseSize(event)">{{items}}</th>
             {% endfor %}
         </tr>
     </thead>
     <tbody>
-        {% for line in data %}
+        {% for line in the_data %}
         <tr>
             <td>{{(loop.index0  + 1)}}</td>
             {% for item in line %}

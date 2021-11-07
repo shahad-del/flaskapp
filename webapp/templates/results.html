@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
+<a href="http://127.0.0.1:8080/">back</a>
+<button onclick="backToPage()">Previous</button>
 <h2>{{ the_title}}</h2>
 <p>you submitted the following data:</p>
 <table>
@@ -8,4 +10,10 @@
 </table>
 <p>When "{{ the_Phrase }}" is searched for "{{the_letters}}",following results are returned:</p>
 <h3>{{ the_results }}</h3>
+<script>
+    function backToPage(){
+        // history.go(-1)
+        window.location.replace("http://127.0.0.1:8080/");
+    }
+</script>
 {% endblock %}
